@@ -1,0 +1,30 @@
+{
+    "title": "Geoquímica, isotopía (Sr, Nd, Hf) y geocronología (U-Pb y Sm-Nd) en rocas metamórficas mesozoicas del terreno Vizcaíno-Alisitos y su relación con el terreno Guerrero",
+    "modality": "hibrido",
+    "type": "Geoquímica",
+    "cycle": 2024,
+    "datetime": "2024-03-18 12:00",
+    "place": "Auditorio Ricardo Monges López",
+    "description": "Casi una tercera parte de la corteza continental mexicana está formada por terrenos mesozoicos que fueron acrecionados al margen continental a finales del Cretácico Temprano. Estos terrenos los encontramos en la península de Baja California. Descubre con nosotros la importancia geológica y la belleza de estos paisajes con el Dr. Dr. Manuel Contreras López, Posdoctorante Instituto de Geofísica, UNAM.",
+    "youtube_link": "youtube_link",
+    "youtube_embed": "youtube_embed",
+    "facebook_link": "facebook_link",
+    
+    "speaker":{         
+            "name": "Dr. Manuel Contreras López",
+            "img_url": "Angel-Ramirez.png",
+            "img_alt": "Manuel Contreras López",
+            "institution": "Instituto De Geofisica",
+            "institution_departament": "institution_departament",
+            "institution_link": "https://www.geofisica.unam.mx/",
+            "semblance": "semblance"
+        },
+    "host":{
+        "name":"Dr. Ismael Herrera Revilla",  
+        "img_url": "..../public/Angel-Ramirez.png",
+        "img_alt": "Ismael Herrera Revilla",
+        "institution": "Instituto De Geofisica",
+        "institution_departament": "institution_departament",
+        "institution_link": "https://www.geofisica.unam.mx/"
+        }
+}   
