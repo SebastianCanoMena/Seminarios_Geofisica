@@ -12,8 +12,8 @@
     
     "speaker":{         
             "name": "Dr. Manuel Contreras López",
-            "img_url": "Angel-Ramirez.png",
-            "img_alt": "Manuel Contreras López",
+            "img_url": "speaker/Angel-Ramirez.png",
+            "img_alt": "Angel-Ramirez",
             "institution": "Instituto De Geofisica",
             "institution_departament": "institution_departament",
             "institution_link": "https://www.geofisica.unam.mx/",
@@ -21,7 +21,7 @@
         },
     "host":{
         "name":"Dr. Ismael Herrera Revilla",  
-        "img_url": "..../public/Angel-Ramirez.png",
+        "img_url": "host/Carmen",
         "img_alt": "Ismael Herrera Revilla",
         "institution": "Instituto De Geofisica",
         "institution_departament": "institution_departament",
