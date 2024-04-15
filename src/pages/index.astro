@@ -1,19 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Card from '../components/Card.jsx';
 import Navbar from '../layouts/Navbar.astro'
 import SearchBar from '../components/SearchBar.astro'
+import SideBar from '../components/SideBar.astro'
+export const prerender = true
 ---
 <Layout>
-	<Navbar/>
-	<h1>Seminarios Geofisica</h1>
-	<SearchBar/>
-	<Card />
+	<Navbar slot='navbar'/>
+	<SearchBar slot='search-bar'/>
+	<SideBar slot='side-bar'/>
+	<Card slot='card' client:only='react'/>
 <Layout/>
-
-<style>
-	h1{
-		text-align: center;
-		font-size: 50px;
-	}
-</style>
