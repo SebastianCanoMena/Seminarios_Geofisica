@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
+import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
@@ -7,5 +8,6 @@ export default defineConfig({
     adapter: node({
         mode: "standalone",
     }),
-    server: {port: 4321, host: true}
+    server: {port: 4321, host: true},
+    integrations: [react()],
 });
