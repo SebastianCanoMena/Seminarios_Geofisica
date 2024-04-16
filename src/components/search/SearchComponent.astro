@@ -1,0 +1,31 @@
+---
+import DropdownMenu from './DropDownMenu.astro'
+import SearchBar from './SearchBar.astro'
+import SideBar from './SideBar.astro'
+---
+<!-- -->
+<div class="div-parent">
+    <div class="search">
+    <SearchBar />
+    <DropdownMenu name='Tipo' option={null}/>
+    <DropdownMenu name='Año' option={null}/>
+    </div>
+    <div class="side-bar">
+    <SideBar />
+    </div>
+</div>
+<style>
+    .div-parent{
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .search{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+    }
+    .side-bar{
+        float: right;
+    }
+</style>
