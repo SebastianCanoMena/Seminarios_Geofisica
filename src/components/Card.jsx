@@ -14,7 +14,6 @@ const seminarP = seminars.filter((a) => currentDate > a.data.datetime)
     return new Date(a.data.datetime) - new Date(b.data.datetime)
 })*/
 
-console.log(202405181200>202303181300)
 export default function Card()
 {
 

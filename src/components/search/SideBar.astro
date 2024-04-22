@@ -1,11 +1,12 @@
 ---
 
 ---
+
 <div class="div-parent">
-    <div class="div-child">
-        <a href="#next" class="next">Proximas</a>
+    <color-asing class="div-child">
+        <a href="#next" class="next" style="color: #1282A2;">Proximas</a>
         <a href="#past" class="past">Pasadas</a>
-    </div>
+    </color-asing>
 </div>
 <style>
     .div-child{
@@ -26,8 +27,38 @@
         text-decoration: none;
     }
 
-    .next:focus, .past:focus{      
-        color:#1282A2;
-    }
-
 </style>
+    
+<script>
+    class ColorAsing extends HTMLElement{
+        constructor(){
+            super();
+            const next = this.querySelector('a.next');
+            const past = this.querySelector('a.past');
+            const a = this.querySelectorAll('a')
+            let count = 0;
+            var displayPast = true
+            var displayNext = true
+            next?.addEventListener('click', () => {
+                if(displayPast === true){
+                displayNext = true
+                displayPast= false
+                next?.setAttribute('style', 'color: #1282A2;')
+                past?.setAttribute('style', '')
+                }
+                
+            })
+
+            past?.addEventListener('click', () =>{ 
+                if(displayNext){
+                    displayPast = true
+                    displayNext= false
+                    past?.setAttribute('style', 'color: #1282A2;')  
+                    next?.setAttribute('style', '')
+                }    
+            })
+            
+        }
+    }
+    customElements.define('color-asing', ColorAsing)
+</script>
