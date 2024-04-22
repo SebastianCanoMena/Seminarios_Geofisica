@@ -1,9 +1,9 @@
 {
-    "title": "s, isotopía (Sr, Nd, Hf) y geocronología (U-Pb y Sm-Nd)",
+    "title": "Geoquímica, isotopía (Sr, Nd, Hf) y geocronología (U-Pb y Sm-Nd)",
     "modality": "hibrido",
     "type": "Geoquímica",
     "cycle": 2023,
-    "datetime": "2024 05 18 12:00",
+    "datetime": "2023 03 18 13:00",
     "place": "Auditorio Ricardo Monges López",
     "description": "Casi una tercera parte de la corteza continental mexicana está formada por terrenos mesozoicos que fueron acrecionados al margen continental a finales del Cretácico Temprano. Estos terrenos los encontramos en la península de Baja California. Descubre con nosotros la importancia geológica y la belleza de estos paisajes con el Dr. Dr. Manuel Contreras López, Posdoctorante Instituto de Geofísica, UNAM.",
     "youtube_link": "youtube_link",
@@ -11,8 +11,8 @@
     "facebook_link": "facebook_link",
     
     "speaker":{         
-            "name": "Dr. Manuel Contreras López",
-            "img_url": "speaker/Angel-Ramirez.png",
+            "name": "Diana Ibarra",
+            "img_url": "speaker/Diana-Ibarra.png",
             "img_alt": "Angel-Ramirez",
             "institution": "Instituto De Geofisica",
             "institution_department": "institution_departament",
@@ -20,7 +20,7 @@
             "semblance": "semblance"
         },
     "host":{
-        "name":"Dr. Juan Treviño",  
+        "name":"Dr. Ismael Herrera Revilla",  
         "img_url": "host/Carmen.png",
         "img_alt": "Ismael Herrera Revilla",
         "institution": "Instituto De Geofisica",

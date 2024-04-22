@@ -3,14 +3,13 @@
 ---
 <div class="div-parent">
     <div class="div-child">
-        <a href="#" class="proximas">Proximas</a>
-        <a href="#" class="pasadas">Pasadas</a>
+        <a href="#next" class="next">Proximas</a>
+        <a href="#past" class="past">Pasadas</a>
     </div>
 </div>
 <style>
-    .div-parent{
-    }
     .div-child{
+        
         background-color: rgba(3, 64, 120, 0.08);
         height: 121px;
         width: 169px;
@@ -26,8 +25,9 @@
         color: #0A1128;
         text-decoration: none;
     }
-    .proximas{
-        
+
+    .next:focus, .past:focus{      
+        color:#1282A2;
     }
 
 </style>

@@ -1,16 +1,86 @@
     body{
 		font-family: roboto;
+		background-color: #FEFCFB;
+		background-image: url(/background/Institutional.png);
+		background-size: cover;
 	}
+
+	.cards{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+	}
+
+	.cards .card-div-parent-next{ 
+		justify-content: center;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+	.card-div-parent-next{
+		background-color: #FEFCFB;
+		border: 1px solid rgba(3, 64, 120, 0.56);
+		border-radius: 38px;
+		height: 292.5px;
+		margin: 60px;
+		width: 781.5px;
+	}
+
+	.card-div-parent-next{
+		.card-div-child{
+		padding: 15px;
+		padding-right: 30px;
+		height: 181.5px;
+		.card-div-top{
+			padding-right: 30px;
+			padding-left: 15px;
+
+			.speaker-img{
+				width: 156px;
+				height: 150px;
+			}
+
+			.card-div-top-title{
+				font-size: 27px;
+			}
+			.card-div-top-horizontal-line{
+				height: 4.5px;
+				margin-top: 7.5px;
+			}
+			.card-div-top-type{
+				font-size: 24px;
+			}
+			.card-div-top-date{
+				font-size: 24px;
+			}
+		}
+		.card-div-bottom{
+			height: 135px;
+
+			.card-div-bottom-name{
+				font-size: 21px;
+			}
+		
+			.card-div-bottom-show-more{
+				width: 30px;
+				height: 3px;
+			}
+		
+		}
+	}
+
+	}
+
 	.card-div-parent{
 		background-color: #FEFCFB;
 		border: 1px solid rgba(3, 64, 120, 0.56);
 		border-radius: 38px;
 		height: 195px;
-		margin: 40px;
+		margin: 60px;
 		width: 521px;
 		
 	}
-    
 
 	.card-div-child{
 		position: relative;
