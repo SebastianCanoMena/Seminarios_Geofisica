@@ -62,7 +62,7 @@ export default function Card()
     
     return( 
     <div className='cards'>
-        {(display && seminar!=null) ? <DisplayCard seminar={seminar}/> : <>{Nextseminars} {Pastseminars}</>}
+        {(display && seminar!=null) ? <DisplayCard seminar={seminar} display={setDisplay}/> : <>{Nextseminars} {Pastseminars}</>}
         
     </div>
 );}
