@@ -1,9 +1,13 @@
 ---
-const {name, option} = Astro.props;
+const {name, options} = Astro.props;
+
 ---
-
+<onclick-event>
 <button>{name}</button>
-
+<div class="div-child">
+    {options.map(item => <a href="#">{item}</a>)}
+</div>
+</onclick-event>
 <style>
     button{
         background-color: rgba(3, 64, 120, 0.08);
@@ -15,5 +19,39 @@ const {name, option} = Astro.props;
         font-size: 20px;
         margin-left: 20px;
     }
+
+    .div-child{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(3, 64, 120, 0.08);
+        min-width: 140px;
+        border-radius: 38px;
+        overflow: none;
+        z-index: 1;
+    }
+    a{
+        padding: 20px;
+        text-decoration: none;
+        color: #0A1128;
+    }
 </style>
+<script>
+    class onClickEvent extends HTMLElement{
+        constructor(){
+            super();
+            const button = this.querySelector('button')
+            const divChild = this.querySelector('div.div-child')
+            let display = false
+            button?.addEventListener('click', () => {
+                display = !display
+                display ? divChild?.setAttribute('style', 'display: flex;')
+                : divChild?.setAttribute('style', 'display: nonr;')
+                
+            })
+        }
+    }
+
+    customElements.define('onclick-event', onClickEvent)
+</script>
 

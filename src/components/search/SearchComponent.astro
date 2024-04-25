@@ -7,8 +7,9 @@ import SideBar from './SideBar.astro'
 <div class="div-parent">
     <div class="search">
     <SearchBar />
-    <DropdownMenu name='Tipo' option={null}/>
-    <DropdownMenu name='Año' option={null}/>
+    <DropdownMenu name='Tipo' options={['Institucional',
+     'Recursos Naturales', 'Geomagnetismo']}/>
+    <DropdownMenu name='Año' options={[2022, 2023, 2024]}/>
     </div>
     <div class="side-bar">
     <SideBar />
