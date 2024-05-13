@@ -1,7 +1,7 @@
 ---
 import DropdownMenu from './DropDownMenu.astro'
 import SearchBar from './SearchBar.astro'
-import SideBar from './SideBar.astro'
+import TableOfContent from './TableOfContent.astro'
 ---
 <!-- -->
 <div class="div-parent">
@@ -11,8 +11,8 @@ import SideBar from './SideBar.astro'
      'Recursos Naturales', 'Geomagnetismo']}/>
     <DropdownMenu name='Año' options={[2022, 2023, 2024]}/>
     </div>
-    <div class="side-bar">
-    <SideBar />
+    <div class="table-of-content">
+    <TableOfContent />
     </div>
 </div>
 <style>
@@ -26,7 +26,7 @@ import SideBar from './SideBar.astro'
         justify-content:center;
         width: 100%;
     }
-    .side-bar{
+    .table-of-content{
         position: fixed;
         right: 0;
     }

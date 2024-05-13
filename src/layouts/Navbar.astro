@@ -4,8 +4,8 @@
 <div class="navbar">
 
 <div class="icons">
-    <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" id="unam"><img src="navbar/Unam.png"/></a>
-    <a href="https://www.geofisica.unam.mx/" target="_blank" rel="noopener noreferrer" id="geofisica"><img src="navbar/Geofisica.png"/></a>
+    <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" id="unam"><img src="navbar/Unam.png" alt="unam-icon"/></a>
+    <a href="https://www.geofisica.unam.mx/" target="_blank" rel="noopener noreferrer" id="geofisica"><img src="navbar/Geofisica.png" alt="instituto-de-geofisica-icon"/></a>
 </div>
 <div class="title">
     <h1>Seminarios</h1>
@@ -25,6 +25,11 @@
         justify-content: center;
         font-size: 30px;
         color: #FEFCFB;
+    }
+    @media screen and (max-width: 1200px) {
+        .title{
+            display: none;
+        }
     }
     .icons{
         position: absolute;

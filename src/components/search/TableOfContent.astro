@@ -1,0 +1,61 @@
+---
+
+---
+
+
+    <color-asing class="div-child">
+        <a href="#next" class="next" id="b" style="color: #1282A2;">Proximas</a>
+        <a href="#past" class="past">Pasadas</a>
+    </color-asing>
+<style>
+    .div-child{
+        background-color: rgba(3, 64, 120, 0.08);
+        height: 121px;
+        width: 169px;
+        border-radius: 38px;
+        font-size: 20px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        }
+        a{
+            color: #0A1128;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 1200px){
+            .div-child{
+                display: none;
+            }
+        }
+
+</style>
+    
+<script>
+    /*functionality in process, just the template*/     
+    class ColorAsing extends HTMLElement{
+        constructor(){
+            super();
+            
+            let options = {
+                root: document.querySelector('#next'),
+                rootMargin: '0px',
+                threshold: 1.0,
+            }
+            let target = document.querySelector('#past')
+            
+            let callback = (entries, observer) => {
+                entries.forEach((entry) => {
+                    
+                })
+            }
+            let observer = new IntersectionObserver(callback, options)
+            
+            
+        }
+    }
+
+    customElements.define('color-asing', ColorAsing)
+    
+</script>

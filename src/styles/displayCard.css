@@ -1,0 +1,199 @@
+/*DisplayCard*/
+.DisplayCard{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 38px;
+    background-color: rgba(3, 64, 120, 0.08);
+    display: grid;
+    grid-template-rows: [first] 15%, [second] 35% [third] 50%;
+    height: 800px;
+}
+
+/*NextCard*/
+
+/*next-card-top*/
+
+.next-card-top{
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: [first] 5% [second] 60% [third] 35%;
+
+    .next-card-close{
+        margin: none;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    .next-card-title{
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .next-card-horizontal-line{
+        margin-top: 5px;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .next-card-type{
+        grid-row: 3;
+    }
+    
+}
+.next-card-horizontal-line{
+    width: 100%;
+    height: 3px;
+    background-color: #1282A2;
+
+}
+
+/*next-card-mid*/
+.next-card-mid{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    column-gap: 20px;
+
+    /*Speaker Info*/
+    .next-card-speaker{
+        grid-column: 1;
+        display: grid;
+
+        .next-card-speaker-child{
+            background-color: #FEFCFB;
+            width: 100%;
+            height: 200px;
+            border-radius: 38px;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            justify-self: flex-start;
+            column-gap: 40px;
+            .next-card-img-speaker{
+                width: 192px;
+                height: 183px;
+                grid-column: 1;
+                justify-self: center;
+                align-self: center;
+                
+            }
+            .next-card-speaker-data{
+                grid-column: 2;
+                display: grid;
+                grid-template-rows: 15% 40% 15%;
+                .institution{
+                    grid-row: 1;
+                }
+                .name{
+                    grid-row: 2;
+                    .next-card-horizontal-line{
+                        width: 80%;
+                        height: 3px;
+                        background-color: #1282A2;
+
+                    }
+                }
+                .institution-department{
+                    grid-row:3;
+                }
+        }
+        }
+
+    }
+    
+    .next-card-semblance{
+        grid-column: 2;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 7%;
+        color: #034078;
+    }
+    .next-card-basic-info{
+        grid-column: 3;
+        margin-left: 30px;
+        .basic-info-child{
+            display: flex;
+            align-items: center;
+            img{
+                height: fit-content;
+                margin-right: 20px;
+            }
+        }
+    }
+
+}
+
+
+
+
+/*next-card-bottom*/
+.next-card-bottom{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 20px;
+
+    .next-card-bottom-left{
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: 20% 80%;
+        .next-card-host{
+            grid-row: 1;
+            display: grid;
+            grid-template-columns: 20% 50% 30%;
+            background-color: #FEFCFB;
+            width: 330px;
+            height: 77px;
+            border-radius: 38px;
+            justify-self:flex-end;
+            img{
+              grid-column: 3;
+              justify-self: flex-end;  
+            }
+            .next-card-host-data{
+                grid-column: 2;
+                grid-row: 1;
+                display: grid;
+                grid-template-rows:  33% 33% 33%;
+                grid-template-columns: 100%;
+                p{
+                    font-size: 8px;
+                    grid-row: 3;
+                }
+                
+                .host-name{
+                    grid-row: 1;
+                    h3{
+                        font-size: 14px;
+                        grid-row: 2;
+                    }
+                }
+            }
+
+
+        }
+            .next-card-satellite-location{
+                grid-row: 2;
+            }
+    }
+    
+    .next-card-bottom-right{
+        grid-column: 2;
+        color: #034078;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 7%;
+        font-size: 14px;
+        .next-card-register{
+            background-color: #FEFCFB;
+            border-radius: 38px;
+            height: 67px;
+            width: 253px;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    
+}
+
