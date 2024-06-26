@@ -8,8 +8,21 @@ import TableOfContent from './TableOfContent.astro'
     <div class="search">
     <SearchBar />
     <DropdownMenu name='Tipo' options={['Institucional',
-     'Recursos Naturales', 'Geomagnetismo']}/>
-    <DropdownMenu name='Año' options={[2022, 2023, 2024]}/>
+     'Recursos Naturales', 'Geomagnetismo', 'Geoquimica']}
+     path={[
+        '/',
+        '/RecursosNaturales/',
+        '/Geomagnetismo/',
+        '/Geoquimica/'
+    ]}
+     />
+    <DropdownMenu name='Año' options={[2022, 2023, 2024]}
+    path={[
+        '/2022/',
+        '/2023/',
+        '/2024/'
+    ]}
+    />
     </div>
     <div class="table-of-content">
     <TableOfContent />

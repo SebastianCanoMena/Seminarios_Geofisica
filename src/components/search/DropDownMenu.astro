@@ -1,11 +1,13 @@
 ---
-const {name, options} = Astro.props;
-
+const {name, options, path} = Astro.props;
+let i = 0
 ---
 <onclick-event>
 <button>{name}</button>
 <div class="div-child">
-    {options.map(item => <a href="#">{item}</a>)}
+
+    {options.map(item => <a href={`${path[i++]}`}>{item}</a>)}
+    
 </div>
 </onclick-event>
 <style>
