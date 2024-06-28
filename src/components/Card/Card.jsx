@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { getCollection, getEntry} from 'astro:content'
 import Institutional from './type/Institutional'
 import DisplayCard from './DisplayCard';
-
+import angel from '../../assets/speaker/Angel-Ramirez.png'
 /*Gets the data collection 'seminar', located at src/content/seminars*/
 const seminars = await getCollection('seminars');
 
@@ -44,7 +44,7 @@ export default function Card({type})
             setNextSeminar(true)}}>
             <div className='card-div-child'>
             <div className='card-div-top'>
-            <img className='speaker-img'src={seminar.data.speaker.img_url} alt={seminar.data.speaker.img_alt}/>
+            <img className='speaker-img'src={angel.src} alt={seminar.data.speaker.img_alt}/>
             <h2 className='card-div-top-title'>{seminar.data.title}</h2>
             <div className='card-div-top-horizontal-line' />
             <h3 className='card-div-top-type'>{seminar.data.type}</h3>
@@ -89,3 +89,7 @@ export default function Card({type})
             {(display && seminar!=null) ? <DisplayCard seminar={seminar} display={setDisplay} nextSeminar={nextSeminar}/> :<> {Nextseminars} {PastSeminars}</>}
         </div> 
     );}
+
+    
+
+    

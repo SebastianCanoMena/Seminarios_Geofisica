@@ -1,11 +1,13 @@
 ---
-
+import { Image } from 'astro:assets';
+import Unam from '../assets/navbar/Unam.png';
+import Geofisica from '../assets/navbar/Geofisica.png';
 ---
 <div class="navbar">
 
 <div class="icons">
-    <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" id="unam"><img src="navbar/Unam.png" alt="unam-icon"/></a>
-    <a href="https://www.geofisica.unam.mx/" target="_blank" rel="noopener noreferrer" id="geofisica"><img src="navbar/Geofisica.png" alt="instituto-de-geofisica-icon"/></a>
+    <a href="https://www.unam.mx/" target="_blank" rel="noopener noreferrer" id="unam"><Image src={Unam} alt="unam-icon"/></a>
+    <a href="https://www.geofisica.unam.mx/" target="_blank" rel="noopener noreferrer" id="geofisica"><Image src={Geofisica} alt="instituto-de-geofisica-icon"/></a>
 </div>
 <div class="title">
     <h1>Seminarios</h1>

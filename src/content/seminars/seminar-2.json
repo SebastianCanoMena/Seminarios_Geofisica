@@ -12,7 +12,7 @@
     
     "speaker":{         
             "name": "Dr. Manuel Contreras López",
-            "img_url": "speaker/Angel-Ramirez.png",
+            "img_url": "Angel-Ramirez.png",
             "img_alt": "Angel-Ramirez",
             "institution": "Instituto De Geofisica",
             "institution_department": "institution_departament",
@@ -21,7 +21,7 @@
         },
     "host":{
         "name":"Dr. Ismael Herrera Revilla",  
-        "img_url": "host/Carmen.png",
+        "img_url": "Carmen.png",
         "img_alt": "Ismael Herrera Revilla",
         "institution": "Instituto De Geofisica",
         "institution_departament": "institution_departament",
